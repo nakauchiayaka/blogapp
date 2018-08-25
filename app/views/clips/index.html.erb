@@ -1,0 +1,7 @@
+
+  <div class="contents row" style="left: 0;" >
+    <h3 style="text-align: center;">お気に入り</h3>
+  <% @clips.each do |clip| %>
+      <%= render partial:"clip", locals:{clip: clip} %>
+  <% end %>
+  </div>

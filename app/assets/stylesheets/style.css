@@ -1,0 +1,17 @@
+.contents{
+  position: relative;
+  overflow: hidden;
+}
+.row{
+  position: relative;
+  left: 27%;
+}
+.pagination{
+  left:0;
+}
+.field{
+  margin: 0 auto;
+  width: 500px;
+}
+
+

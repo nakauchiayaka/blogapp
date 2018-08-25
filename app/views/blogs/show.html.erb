@@ -6,8 +6,8 @@
               <p><%= simple_format(@blog.text) %></p>
             </div>
     <div class="card-action">
-      <% if user_signed_in? && current_user.id == @blog.user_id %>
               <a><%= link_to "お気に入り", add_blog_path(@blog), method: :post %></a>
+      <% if user_signed_in? && current_user.id == @blog.user_id %>
               <a><%= link_to '削除',"/blogs/#{@blog.id}",method: :delete%></a>
               <a><%= link_to '編集', "/blogs/#{@blog.id}/edit", method: :get %></a>
       <% end %>

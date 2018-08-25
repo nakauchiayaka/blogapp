@@ -13,7 +13,9 @@ class ClipsController < ApplicationController
 
 
       if @clip.save
-        redirect_to user_path(current_user)
+      redirect_to clips_path(current_user)
+      else
+      redirect_to clips_path(current_user)
       end
 
   end

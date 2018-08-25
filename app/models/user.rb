@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
    has_many :blogs ,through: :clips
-   has_many :clips ,dependent: :destroy
+   has_many :clips
 end

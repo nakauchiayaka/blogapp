@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'blogs#index'
   resources :blogs do
     member do
-      post "add", to: "clips#create"
+      post "add", to: "clips#create" #addというパスを後ろにつける→createに飛ぶ
     end
   end
   resources :users

@@ -9,7 +9,7 @@
             <div class="card-action">
               <a><%= link_to '詳細',"/blogs/#{blog.id}",method: :get %></a>
             <% if user_signed_in? && current_user.id == blog.user_id %>
-              <a><%= link_to '削除',"/blogs/#{blog.id}",method: :delete%></a>
+              <a><%= link_to '削除',"/clips/#{clip.id}",method: :delete%></a>
               <a><%= link_to '編集', "/blogs/#{blog.id}/edit", method: :get %></a>
             <% end %>
             </div>
